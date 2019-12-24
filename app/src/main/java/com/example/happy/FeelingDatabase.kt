@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import java.security.AccessControlContext
 
-@Database(entities = arrayOf(Feeling::class), version = 1)
+@Database(entities = [Feeling::class], version = 1)
 abstract class FeelingDatabase: RoomDatabase() {
     //Instance of DAO
     abstract fun feelingDao(): FeelingDao
